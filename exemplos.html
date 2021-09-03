@@ -4,23 +4,67 @@
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Título</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <title>Exercícios JS</title>
     <script src='main.js'></script>
+
+
 </head>
 
 <body>
-    <div>
-        <small>Nome</small>
-        <input type="text" id="nome" />
-    </div>
-        
-    <input type="button" onclick="ChamarNome()" 
-        value="Tamanho do nome digitado" >
-    </input>
+    <div class="container">
 
-    <button onclick="Contar()" >Contar de 1 a 100</button>
-    <button onclick="Nomes()">Nomes</button>
+        <div class="row">
+            <div class="col-sm-12 col-md-4">
+                <p>TEXTO 1</p>
+            </div>
+            <div class="col-sm-12 col-md-4">
+                <p>TEXTO 2</p>
+            </div>
+            <div class="col-sm-12 col-md-4">
+                <p>TEXTO 3</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12 col-md-8">
+                <div class="form-group">
+                    <label>Nome</label>
+                    <input type="text" class="form-control" id="nome" />
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-4">
+                <div class="form-group">
+                    <label>Cidade</label>
+                    <input type="text" class="form-control" id="cidade" />
+                </div>
+            </div>
+        </div>
+
+        <input class="btn btn-primary" type="button" onclick="pegarTamanhoNome()" value="Tamanho do nome">
+        </input>
+        <button class="btn btn-info" onclick="contar()">Contar de 1 a 100</button>
+        <button class="btn btn-success" onclick="nomes()">Nomes</button>
+
+        <div>
+            <label>Tabuada</label>
+            <input type="number" id="tabuada" />
+            <button onclick="calcularTabuada()">C</button>
+        </div>
+        <p>
+            <span id="span_tabuada"></span>
+        </p>
+
+        <footer>
+
+        </footer>
+    </div>
 </body>
 
 </html>
