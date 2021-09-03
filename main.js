@@ -3,7 +3,12 @@ function pegarTamanhoNome() {
     var var_cidade = document.getElementById("cidade").value;
     
     if(var_nome.trim() == ''){
-        alert('Nome está em branco')
+        Swal.fire({
+            title: 'Ops!',
+            text: 'Nome está em branco',
+            icon: 'info',
+            confirmButtonText: 'Ok'
+          })
     }else if(var_cidade.trim() == ''){
         alert('Cidade está em branco')
     }else{
